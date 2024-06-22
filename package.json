@@ -1,0 +1,38 @@
+{
+  "name": "@bruhabruh/prettier-config",
+  "version": "1.0.0",
+  "description": "BruhaBruh Prettier Config for projects",
+  "author": "BruhaBruh",
+  "license": "MIT",
+  "keywords": [
+    "prettier",
+    "config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruhabruh/prettier-config"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "prettier --check '**/*.{js,md,yaml,yml,json}'",
+    "prettier": "prettier '**/*.{js,md,yaml,yml,json}'",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "nano-staged": "^0.8.0",
+    "prettier": "^3.3.2"
+  },
+  "peerDependencies": {
+    "prettier": "*"
+  },
+  "nano-staged": {
+    "*.{js,md,yaml,yml,json}": [
+      "prettier --write"
+    ]
+  }
+}
