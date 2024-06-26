@@ -5,7 +5,7 @@ module.exports = {
   trailingComma: 'all',
   tabWidth: 2,
   endOfLine: 'lf',
-  bracketSpacing: false,
+  bracketSpacing: true,
   overrides: [
     {
       files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
